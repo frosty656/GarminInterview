@@ -18,8 +18,5 @@ private:
 	vector<shared_ptr<Node>> children;
 
 	string name;
-
-	bool visited = false;
-
 };
 
