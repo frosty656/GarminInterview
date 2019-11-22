@@ -45,8 +45,14 @@ int main() {
 
 	currentNode->addChild("B2")->addChild("C1");
 
+	shared_ptr<Node> result = findNode(root, "Find Me");
 
-	cout << "FOUND NODE " << findNode(root, "Find Me")->getName() << endl;
+	if (result != nullptr) {
+		cout << "Found node: " << result->getName() << endl;
+	}
+	else {
+		cout << "Node not found" << endl;
+	}
 
 
 	cin.get();
